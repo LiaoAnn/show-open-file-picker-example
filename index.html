@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>showOpenFilePicker Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="h-[100vh] w-[100vw] overflow-hidden bg-neutral-100">
+      <div
+        class="p-4 md:p-8 mx-4 md:mx-auto mt-4 md:mt-20 border rounded shadow bg-white max-w-[450px]"
+      >
+        <h1 class="text-base md:text-xl font-bold text-center">
+          showOpenFilePicker Example
+        </h1>
+        <p class="text-sm md:text-lg text-center mt-4">
+          Click the button below to open the file picker dialog.
+        </p>
+        <button
+          id="upload-btn"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 mx-auto rounded flex items-center transition-colors duration-300 ease-in-out mt-8"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-current mr-1"
+            height="24"
+            width="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M11 16V7.85l-2.6 2.6L7 9l5-5l5 5l-1.4 1.45l-2.6-2.6V16zm-5 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"
+            />
+          </svg>
+          <span>Upload Images</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
